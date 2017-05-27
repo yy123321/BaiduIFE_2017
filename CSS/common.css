@@ -2,7 +2,7 @@
 * @Author: FF
 * @Date:   2017-05-20 11:01:44
 * @Last Modified by:   FF
-* @Last Modified time: 2017-05-25 17:56:38
+* @Last Modified time: 2017-05-27 14:41:31
 */
 body{
 	margin: 0;
@@ -118,8 +118,13 @@ body{
 
 .artical-table table{
 	border-collapse:collapse; /*设置表格边框没有空隙*/
-	width: 1000px;
-	} 
+	width: 1240px;
+	}
+
+.artical-table .totle{
+	background-color: #CCC;
+}
+
 .artical-table table td{
 	border-right:1px solid #CCC; 
 	border-bottom:1px solid #CCC;
@@ -135,4 +140,20 @@ body{
 
 .artical-table .first{
 	border-left: 1px solid #CCC;
+}
+
+.index-sidebar{
+	width: 1200px;
+	margin-top: 40px;
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background: #FFF;
+	border: 1px solid red;
+}
+
+.index-sidebar .sidebar-title{
+	margin-left: 10px;
+	padding: 10px 0px 10px 10px;
+	border-left: 3px solid #CCC;
 }
