@@ -1,0 +1,35 @@
+/*
+* @Author: FF
+* @Date:   2017-06-19 15:57:36
+* @Last Modified by:   FF
+* @Last Modified time: 2017-06-20 17:20:38
+*/
+
+.container {
+	margin: 0 20px;
+	padding: 20px;
+	border: 1px solid #999;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.container .primary {
+	margin-left: 220px;
+}
+
+.container .secondary {
+	width: 200px;
+	float: left;
+	border: 1px solid #999;
+}
+
+.container .primary .primary-s{
+	width: 120px;
+	float: right;
+	border: 1px solid #999;
+}
+
+.container .primary .primary-p{
+	margin-right: 140px;
+	border: 1px solid #999;
+}

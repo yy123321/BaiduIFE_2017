@@ -1,0 +1,28 @@
+/*
+* @Author: FF
+* @Date:   2017-06-16 10:38:19
+* @Last Modified by:   FF
+* @Last Modified time: 2017-06-16 11:12:12
+*/
+.content .primary {
+	width: 860px;
+	padding-right: 20px;
+	padding-left: 20px;
+	float: right;
+	display: inline;
+	background-color: #eee;
+}
+
+.content .secondary {
+	width: 280px;
+	padding-left: 20px;
+	float: left;
+	display: inline;
+	background-color: #b0b0b0;
+}
+
+.content {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}

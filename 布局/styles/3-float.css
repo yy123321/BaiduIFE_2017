@@ -1,0 +1,42 @@
+/*
+* @Author: FF
+* @Date:   2017-06-19 11:08:10
+* @Last Modified by:   FF
+* @Last Modified time: 2017-06-19 11:23:43
+*/
+
+.content .primary {
+	width: 900px;
+	float: right;
+	display: inline;
+	background-color: #eee;
+}
+
+.content .secondary {
+	width: 280px;
+	padding-left: 20px;
+	float: left;
+	display: inline;
+	background-color: #b0b0b0;
+}
+
+.content {
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+.content .primary .primary{
+	width: 600px;
+	float: left;
+	display: inline;
+	background-color: #eee;
+}
+
+.content .primary .secondary {
+	width: 260px;
+	padding-right: 20px;
+	float: right;
+	display: inline;
+	background-color: #eee;
+}

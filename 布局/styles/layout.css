@@ -1,0 +1,84 @@
+/*
+* @Author: FF
+* @Date:   2017-06-13 14:50:18
+* @Last Modified by:   FF
+* @Last Modified time: 2017-06-19 11:05:29
+*/
+
+body {
+	/*margin: 0 auto;*/
+	text-align: center;
+	color: #fb5;
+	background-color: #334;
+	background-image: url(../images/background.gif);
+	background-repeat: repeat-x;
+	background-attachment: fixed;/*当页面的其余部分滚动时，背景图像不会移动*/
+	background-position: top left;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.header {
+	background-color: #334;
+	background-image: url(../images/guitarist.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	border: .1em solid #667;
+	border-bottom-width: 0;
+}
+
+.header img {
+	/*display: block;*/
+	vertical-align:bottom;
+}
+
+.header .nav {
+	margin: 0;
+	overflow: hidden;
+	background: #789 url(../images/navbar.gif) repeat-x left bottom;
+	list-style: none;
+}
+
+.header .nav li {
+	display: inline;
+	float: left;
+}
+
+.header .nav li a{
+	display: block;
+	padding: .5em 2em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #eef;
+}
+
+.header .nav li a:link, .header .nav li a:visited {
+	color: #eef;
+}
+
+.header .nav li a:hover {
+	color: #445;
+	background-color: #eb6;
+}
+
+.header .nav li a:active {
+	color: #667;
+	background-color: #ec8;
+}
+
+.header .nav li a {
+	border-right: .1em solid #99a;
+}
+
+.header .nav .li-first {
+	border-left: .1em solid #99a;
+}
+
+.content {
+	color: #000;
+}
+
