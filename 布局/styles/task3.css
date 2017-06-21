@@ -2,7 +2,15 @@
 * @Author: FF
 * @Date:   2017-06-19 15:57:36
 * @Last Modified by:   FF
-* @Last Modified time: 2017-06-20 17:20:38
+* @Last Modified time: 2017-06-21 11:40:05
+*/
+
+/*
+说明：
+1.左右设置为float，中间用margin会自动适应宽度。但是html里，右浮动需在中间部分的前面，否则，右浮动会换行。
+2.如果使用position，容器的高度不会自适应，需要使用js进行辅助。
+3.中间部分既不能使用float，也不能使用position，因为这两个不会宽度自适应屏幕，他们是宽度自适应内容。
+4.last-child在某些IE中不支持，但可在chrome等浏览器中实现功能。此处不考虑兼容性了。
 */
 
 .container {
@@ -11,25 +19,48 @@
 	border: 1px solid #999;
 	background-color: #eee;
 	overflow: hidden;
+	position: relative;
 }
 
-.container .primary {
-	margin-left: 220px;
-}
-
-.container .secondary {
+.container .left {
 	width: 200px;
 	float: left;
 	border: 1px solid #999;
 }
 
-.container .primary .primary-s{
+.container .right {
 	width: 120px;
 	float: right;
 	border: 1px solid #999;
 }
 
-.container .primary .primary-p{
+.container .middle {
+	margin-left: 220px;
 	margin-right: 140px;
 	border: 1px solid #999;
+}
+
+.container .left {
+	overflow: hidden;
+}
+
+.container .left img {
+	width: 80px;
+	margin: 20px;
+	display: inline-block;
+	float: left;
+}
+
+.container .right img {
+	width: 80px;
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.container .right img:last-child {
+	margin-bottom: 20px;
+}
+
+.container {
+	min-width: 400px;
 }
