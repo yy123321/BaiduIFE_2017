@@ -1,0 +1,14 @@
+/*
+* @Author: FF
+* @Date:   2017-06-22 15:41:37
+* @Last Modified by:   FF
+* @Last Modified time: 2017-06-22 15:56:08
+*/
+.center {
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
