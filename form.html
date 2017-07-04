@@ -3,7 +3,142 @@
     <head>
         <meta charset="utf-8" />
         <title>Form</title>
+        <style type="text/css">
+        	form {
+        		width: 30em;
+        	}
+        	fieldset {
+        		margin: 1em 0;
+        		padding: 1em;
+        		border: 1px solid #ccc;
+        		background-color: #f8f8f8;
+        	}
+        	legend {
+        		font-weight: bold;
+        	}
+        	label {
+        		/*display: block;*/
+        		float: left;
+        		width: 10em;
+        		cursor: pointer;
+        	}
+        	div {
+        		clear: both;
+        	}
+
+        	input[type="text"] {
+        		width: 20em;
+        	}/*属性选择器，不支持IE6及以下*/
+
+        	textarea {
+        		width: 100%;
+        		height: 10em;
+        	}
+
+        	input .radio {
+        		width: auto;
+        	}
+
+        	textarea:focus {
+        		background-color: #ffc;
+        	}
+
+        	#dateOfMonth, #dateOfYear {
+        		text-indent: -1000em;
+        		width: 0;
+        	}
+        	#dateOfBirth, #monthOfBirth, #yearOfBirth {
+        		width: 5em;
+        	}
+
+        	fieldset #favoriteColor {
+        		margin: 0;
+        		padding: 0;
+        		border: none;
+        		background: transparent;
+        	}
+
+        	#favoriteColor h2 {
+        		width: 10em;
+        		float: left;
+        		font-size: 1em;
+        		font-weight: normal;
+        	}
+
+        	#favoriteColor .col {
+        		width: 8em;
+        		float: left;
+        		clear: none;
+        	}
+        	#favoriteColor label {
+        		float: none;
+        	}
+        </style>
     </head>
     <body>
+        <form>
+        	<fieldset>
+        	    <legend>Your Contact Details</legend>
+        	    <div>
+        		    <!-- <label>Name:<input type="text" name="author"></label> -->
+        		    <label for="name">Name:</label>
+        		    <input type="text" name="name" id="name">
+        	    </div>
+        	    <div>
+        		    <label for="Age">Age:<em class="required">(require)</em></label>
+        		    <input type="text" name="Age" id="Age">
+        	    </div>
+        	    <div>
+        		    <label for="text">Message:</label>
+        		    <textarea name="text" id="text"></textarea>
+        	    </div>
+        	    <div>
+        	    	<label for="yes"><input type="radio" name="yes" id="yes" class="radio" value="yes">Yes</label>
+        	    </div>
+
+        	    <div>
+        	    	<label for="no"><input type="radio" name="no" id="no" class="radio" value="no">No</label>
+        	    </div>
+
+        	    <div>
+        	    	<label for="dateOfBirth">生日:</label>
+        	    	<input type="text" name="dateOfBirth" id="dateOfBirth">
+        	    	<label id="dateOfMonth" for="monthOfBirth">123</label>
+        	    	<select name="monthOfBirth" id="monthOfBirth">
+        	    		<option value="1">Jan</option>
+        	    		<option value="2">May</option>
+        	    		<option value="3">Feb</option>
+        	    	</select>
+        	    	<label id="dateOfYear" for="yearOfBirth">234</label>
+        	    	<input type="text" name="yearOfBirth" id="yearOfBirth">
+        	    </div>
+
+        	    <fieldset id="favoriteColor">
+        	        <h2>喜欢的颜色:</h2>
+        	        <div class="col">
+        	            <div>
+        	                <label><input class="checkbox" id="red" name="red" type="checkbox" value="red" />红色</label>
+        	            </div>
+        	            <div>
+        	                <label><input class="checkbox" id="yellow" name="yellow" type="checkbox" value="yellow" />黄色</label>
+        	            </div>
+        	        </div>
+
+        	        <div class="col">
+        	            <div>
+        	                <label><input class="checkbox" id="orange" name="orange" type="checkbox" value="orange" />橙色</label>
+        	            </div>
+        	            <div>
+        	                <label><input class="checkbox" id="purple" name="purple" type="checkbox" value="purple" />紫色</label>
+        	            </div>
+        	        </div>
+        	    </fieldset>
+
+        	    <div>
+        	    	<button type="submit">OK</button>
+        	    </div>
+
+            </fieldset>
+        </form>
     </body>
 </html>
